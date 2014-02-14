@@ -46,7 +46,7 @@ class Dogecoind < Formula
             <false/>
             <key>ProgramArguments</key>
             <array>
-                <string>#{bin}/bin/dogecoind</string>
+                <string>#{bin}/dogecoind</string>
                 <string>-conf</string>
                 <string>#{etc}/dogecoin.conf</string>
                 <string>-pid</string>
