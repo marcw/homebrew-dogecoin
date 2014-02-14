@@ -14,11 +14,10 @@ class Dogecoind < Formula
     def install
         inreplace 'contrib/debian/examples/dogecoin.conf', '#testnet=1', 'testnet=1'
         inreplace 'contrib/debian/examples/dogecoin.conf', '#server=1', 'server=1'
-        inreplace 'contrib/debian/examples/dogecoin.conf', '#server=1', 'server=1'
         inreplace 'contrib/debian/examples/dogecoin.conf', '#rpcuser=Ulysseys', 'rpcuser=dogecoin'
         inreplace 'contrib/debian/examples/dogecoin.conf', '#rpcpassword=YourSuperGreatPasswordNumber_385593', 'rpcpassword=changeme'
 
-        'src'.cd do
+        cd 'src' do
             system 'make -f makefile.osx'
         end
 
