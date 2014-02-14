@@ -27,6 +27,9 @@ class Dogecoind < Formula
         bash_completion.install 'contrib/dogecoind.bash-completion'
         man1.install 'contrib/debian/manpages/dogecoind.1'
         man5.install 'contrib/debian/manpages/dogecoin.conf.5'
+
+        dogelib=var+'lib/dogecoin'
+        dogelib.mkpath unless dogelib.exist?
     end
 
     test do
@@ -47,10 +50,9 @@ class Dogecoind < Formula
             <key>ProgramArguments</key>
             <array>
                 <string>#{bin}/dogecoind</string>
-                <string>-conf</string>
-                <string>#{etc}/dogecoin.conf</string>
-                <string>-pid</string>
-                <string>#{var}/run/dogecoin.pid</string>
+                <string>-conf=#{etc}/dogecoin.conf</string>
+                <string>-pid=#{var}/run/dogecoin.pid</string>
+                <string>-datadir=#{var}/lib/dogecoin</string>
             </array>
             <key>WorkingDirectory</key>
             <string>#{HOMEBREW_PREFIX}</string>
