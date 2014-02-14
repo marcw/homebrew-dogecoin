@@ -16,6 +16,7 @@ class Dogecoind < Formula
         inreplace 'contrib/debian/examples/dogecoin.conf', '#server=1', 'server=1'
         inreplace 'contrib/debian/examples/dogecoin.conf', '#rpcuser=Ulysseys', 'rpcuser=dogecoin'
         inreplace 'contrib/debian/examples/dogecoin.conf', '#rpcpassword=YourSuperGreatPasswordNumber_385593', 'rpcpassword=changeme'
+        inreplace 'src/makefile.osx', 'CFLAGS += -stdlib=libstdc++', '#CFLAGS += -stdlib=libstdc++'
 
         cd 'src' do
             system 'make -f makefile.osx'
