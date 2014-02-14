@@ -24,6 +24,8 @@ class Dogecoind < Formula
         bin.install 'src/dogecoind'
         etc.install 'contrib/debian/examples/dogecoin.conf'
         bash_completion.install 'contrib/dogecoind.bash-completion'
+        man1.install 'contrib/debian/manpages/dogecoind.1'
+        man5.install 'contrib/debian/manpages/dogecoin.conf.5'
     end
 
     test do
