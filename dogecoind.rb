@@ -48,9 +48,9 @@ class Dogecoind < Formula
             <array>
                 <string>#{bin}/bin/dogecoind</string>
                 <string>-conf</string>
-                <string>#{etc}/dogecoind.conf</string>
+                <string>#{etc}/dogecoin.conf</string>
                 <string>-pid</string>
-                <string>#{var}/run/dogecoind.pid</string>
+                <string>#{var}/run/dogecoin.pid</string>
             </array>
             <key>WorkingDirectory</key>
             <string>#{HOMEBREW_PREFIX}</string>
