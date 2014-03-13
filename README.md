@@ -13,6 +13,10 @@ Uses the testnet by default.
 Contributions are more than welcome. Please raise an issue or send
 pull-requests.
 
+## Tipping
+
+You can tip me at this address: [DL8f3TFKE3sNtznBKX2x9WkDCCJshkgx38](dogecoin://DL8f3TFKE3sNtznBKX2x9WkDCCJshkgx38)
+
 ## License
 
 The MIT License (MIT)
